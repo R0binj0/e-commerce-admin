@@ -89,6 +89,7 @@ export const ProductForm: React.FC<ProductFormProps> = ({
             setLoading(false);
         }
     }
+    
     const onDelete = async () => {
         try{
             setLoading(true)

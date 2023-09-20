@@ -119,7 +119,7 @@ export async function DELETE(
         return NextResponse.json(category)
 
     } catch (error){
-        console.log('CATEGORY_DELETE]', error)
+        console.log('[CATEGORY_DELETE]', error)
         return new NextResponse("Internal error", { status: 500});
     }
 }

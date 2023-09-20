@@ -21,7 +21,7 @@ export async function GET(
         return NextResponse.json(color)
 
     } catch (error){
-        console.log('COLOR_GET]', error)
+        console.log('[COLOR_GET]', error)
         return new NextResponse("Internal error", { status: 500});
     }
 }
@@ -116,7 +116,7 @@ export async function DELETE(
         return NextResponse.json(color)
 
     } catch (error){
-        console.log('COLORr_DELETE]', error)
+        console.log('[COLOR_DELETE]', error)
         return new NextResponse("Internal error", { status: 500});
     }
 }

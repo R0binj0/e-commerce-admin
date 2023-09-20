@@ -27,7 +27,7 @@ export async function GET(
         return NextResponse.json(product)
 
     } catch (error){
-        console.log('PRODUCT_GET]', error)
+        console.log('[PRODUCT_GET]', error)
         return new NextResponse("Internal error", { status: 500});
     }
 }
@@ -70,7 +70,7 @@ export async function PATCH(
         }
 
         if(!params.productId){
-            return new NextResponse("product id is required", { status:400 });
+            return new NextResponse("Product id is required", { status:400 });
         }
 
         const storeByUserId = await prismadb.store.findFirst({
@@ -163,7 +163,7 @@ export async function DELETE(
         return NextResponse.json(product)
 
     } catch (error){
-        console.log('PRODUCT_DELETE]', error)
+        console.log('[PRODUCT_DELETE]', error)
         return new NextResponse("Internal error", { status: 500});
     }
 }
