@@ -31,6 +31,7 @@ const OrdersPage = async({
             return total + Number(item.product.price)
         }, 0)),
         isPaid: item.isPaid,
+        isSent: item.isSent,
         createdAt: format(item.createdAt, "MMMM do, yyyy")
     }))
 

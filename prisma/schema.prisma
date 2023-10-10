@@ -121,6 +121,8 @@ model Order {
   store Store @relation("StoreToOrder", fields: [storeId], references: [id])
   orderItems OrderItem[]
   isPaid Boolean @default(false)
+  isSent Boolean @default(false)
+  is Boolean @default(false)
   phone String @default("")
   address String @default("")
   createdAt DateTime @default(now())
